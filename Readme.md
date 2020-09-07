@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Egor Platonov](https://up.htmlacademy.ru/htmlcss/29/user/1487723).
-* Наставник: `Неизвестно`.
+* Наставник: [Кирилл Генералов](https://htmlacademy.ru/profile/hifull)
 
 ---
 
