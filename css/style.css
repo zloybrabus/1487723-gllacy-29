@@ -1,0 +1,143 @@
+.main-header{
+position: absolute;
+width: 1146px;
+height: 114px;
+left: 27px;
+top: 9px;
+}
+.main-header-logo{
+position: absolute;
+width: 154px;
+height: 64px;
+left: 27px;
+top: 9px;
+background: #FBFCFB;
+}
+.site-navigation{
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 18px;
+display: flex;
+align-items: center;
+}
+.login-link{
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+color: #FFFFFF
+}
+.contacts-phone-main{
+width: 167px;
+height: 24px;
+left: 1006px;
+top: 99px;
+color: #FFFFFF;
+}
+.container
+.h1{
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 60px;
+line-height: 60px;
+text-align: center;
+color: #FFFFFF;
+}
+.button{
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 32px;
+line-height: 44px;
+color: #FFFFFF;
+text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
+}
+.sale-items-chokolate{
+position: absolute;
+width: 560px;
+height: 229px;
+left: 27px;
+top: 647px;
+background: url(Малиновый фон.png);
+border-radius: 16px;
+}
+.sale-item-raspberry{
+position: absolute;
+width: 560px;
+height: 229px;
+left: 27px;
+top: 647px;
+background: url(Малиновый фон.png);
+border-radius: 16px;
+}
+.hits{
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 22px;
+text-align: center;
+color: #FFFFFF;
+}
+.information{
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 22px;
+display: flex;
+align-items: center;
+color: #323232
+}
+.new{
+position: absolute;
+width: 560px;
+height: 220px;
+left: 27px;
+top: 1626px;
+background: url(Клубничный фон.png);
+border-radius: 16px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 22px;
+display: flex;
+align-items: center;
+color: #323232;
+}
+.contacts{
+position: absolute;
+width: 303px;
+height: 306px;
+left: 870px;
+top: 1948px;
+background: #FEFEFE;
+border-radius: 16px;
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 24px;
+display: flex;
+align-items: center;
+color: #323232;
+}
+.main-footer{
+position: absolute;
+width: 1146px;
+height: 78px;
+left: 27px;
+top: 1533px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+display: flex;
+align-items: center;
+color: #FFFFFF;
+
+}
