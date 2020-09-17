@@ -1,143 +1,170 @@
 .main-header{
-position: absolute;
-width: 1146px;
-height: 114px;
-left: 27px;
-top: 9px;
+
 }
+
 .main-header-logo{
-position: absolute;
-width: 154px;
-height: 64px;
-left: 27px;
-top: 9px;
-background: #FBFCFB;
+  background: #FBFCFB;
 }
+
 .site-navigation{
-font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-font-size: 16px;
-line-height: 18px;
-display: flex;
-align-items: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;  
+    color: #FFFFFF;
 }
+
 .login-link{
-font-weight: 500;
-font-size: 14px;
-line-height: 16px;
-color: #FFFFFF
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
 }
-.contacts-phone-main{
-width: 167px;
-height: 24px;
-left: 1006px;
-top: 99px;
-color: #FFFFFF;
+
+.work-time{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
 }
+
+.header-contacts-phone-main{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
 .container
-.h1{
-font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-font-size: 60px;
-line-height: 60px;
-text-align: center;
-color: #FFFFFF;
+.page-title{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 60px;
+    color: #FFFFFF;
 }
+
 .button{
-font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-font-size: 32px;
-line-height: 44px;
-color: #FFFFFF;
-text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  color: #FFFFFF;
+  text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
 }
-.sale-items-chokolate{
-position: absolute;
-width: 560px;
-height: 229px;
-left: 27px;
-top: 647px;
-background: url();
-border-radius: 16px;
+
+.raspberry-title{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 41px;
+    color: #FFFFFF;
 }
+
 .sale-item-raspberry{
-position: absolute;
-width: 560px;
-height: 229px;
-left: 27px;
-top: 647px;
-background: url();
-border-radius: 16px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
 }
+
+.chokolate-title{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 41px;
+    color: #FFFFFF;
+}
+
+.sale-items-chokolate{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
 .hits{
-font-family: Roboto;
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 22px;
-text-align: center;
-color: #FFFFFF;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
 }
-.information{
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 22px;
-display: flex;
-align-items: center;
-color: #323232
-}
-.new{
-position: absolute;
-width: 560px;
-height: 220px;
-left: 27px;
-top: 1626px;
-background: url();
-border-radius: 16px;
 
-font-family: Roboto;
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 22px;
-display: flex;
-align-items: center;
-color: #323232;
+.features{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    color: #323232;
 }
+
+.features-list{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #323232;
+}
+
+.news{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #323232;
+}
+
+.news-item{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: #323232;
+}
+
+.mailing{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #323232;
+}
+
 .contacts{
-position: absolute;
-width: 303px;
-height: 306px;
-left: 870px;
-top: 1948px;
-background: #FEFEFE;
-border-radius: 16px;
-font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-font-size: 18px;
-line-height: 24px;
-display: flex;
-align-items: center;
-color: #323232;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #323232;
 }
+
 .main-footer{
-    
-width: 1146px;
-height: 78px;
-left: 27px;
-top: 1533px;
-
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-display: flex;
-align-items: center;
-color: #FFFFFF;
-
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+    color: #FFFFFF;
 }
