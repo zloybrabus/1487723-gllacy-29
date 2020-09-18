@@ -1,5 +1,10 @@
-.main-header{
+.page-body{
+    background: #849D8F;
 
+}
+
+.page-body-catalog{
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
 }
 
 .main-header-logo{
@@ -12,6 +17,15 @@
     font-weight: bold;
     font-size: 16px;
     line-height: 18px;  
+    color: #FFFFFF;
+}
+
+.site-navigation-mini{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
     color: #FFFFFF;
 }
 
@@ -49,6 +63,35 @@
     font-weight: bold;
     font-size: 60px;
     line-height: 60px;
+    color: #FFFFFF;
+}
+
+.page-title-catalog{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 41px;
+    color: #FFFFFF;
+}
+
+.filter{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+.filter-items{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.2);
     color: #FFFFFF;
 }
 
@@ -106,12 +149,22 @@
     color: #FFFFFF;
 }
 
+.pagination{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+
 .features{
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
     line-height: 30px;
+    background: url();
     color: #323232;
 }
 
@@ -130,6 +183,7 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 22px;
+    background: url();
     color: #323232;
 }
 
@@ -148,6 +202,7 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 22px;
+    background: #F8F7F4;
     color: #323232;
 }
 
@@ -157,6 +212,7 @@
     font-weight: normal;
     font-size: 14px;
     line-height: 20px;
+    background: #FEFEFE;
     color: #323232;
 }
 
@@ -167,4 +223,8 @@
     font-size: 13px;
     line-height: 18px;
     color: #FFFFFF;
+}
+
+.footer-social{
+    background: rgba(255, 255, 255, 0.8);
 }

@@ -4,13 +4,15 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="page-body-catalog">
   <header>
-    <nav>
-      <a href="index.html"><img src="https://via.placeholder.com/154x64"></a>
-      <ul>
+    <nav class="main-navigation">
+      <a class="main-header-logo" href="index.html"><img src="https://via.placeholder.com/154x64"></a>
+      <ul class="site-navigation">
         <li><a href="#">Каталог</a>
         <li><a href="#">Доставка и оплата</a></li>
         <li><a href="#">О компании</a></li>
@@ -20,7 +22,7 @@
       <p>с 10 до 20, ежедневно<br>
         <a href="tel:88124502525">8 812 450-25-25</a>
       </p>
-      <ul>
+      <ul class="site-navigation-mini">
         <li><a href="index.html">Главная</a></li>
         <li><a href="#">Каталог</a></li>
         <li><a href="#">Сливочное</a></li>
@@ -29,34 +31,34 @@
   </header>
 
   <main>
-    <h1>Сливочное мороженое</h1>
+    <h1 class="page-title-catalog">Сливочное мороженое</h1>
     <section>
       <h2>Фильтр</h2>
-      <h3>Сортировка</h3>
-      <ul>
+      <h3 class="filter">Сортировка</h3>
+      <u class="filter-items">
         <li>По популярности</li>
-      </ul>
-      <h3>Цена: 100 ₽ – 500 ₽</h3>
-      <h3>Жирность:</h3>
-      <ul>
-        <li>0%</li>
-        <li>до 10%</li>
-        <li>до 30%</li>
-        <li>выше 30%</li>
-      </ul>
-      <h3>Наполнители:</h3>
-      <ul>
-        <li>шоколадные</li>
-        <li>сахарные присыпки</li>
-        <li>фрукты</li>
-        <li>сиропы</li>
-        <li>джемы</li>
-      </ul>
-      <button>Применить</button>
+        </ul>
+        <h3 class="filter">Цена: 100 ₽ – 500 ₽</h3>
+        <h3 class="filter">Жирность:</h3>
+        <ul class="filter-items">
+          <li>0%</li>
+          <li>до 10%</li>
+          <li>до 30%</li>
+          <li>выше 30%</li>
+        </ul>
+        <h3 class="filter">Наполнители:</h3>
+        <ul class="filter-items">
+          <li>шоколадные</li>
+          <li>сахарные присыпки</li>
+          <li>фрукты</li>
+          <li>сиропы</li>
+          <li>джемы</li>
+        </ul>
+        <button>Применить</button>
     </section>
 
     <section>
-      <ul>
+      <ul class="hits-list">
         <h2>Ассортимент</h2>
         <li><img src="https://via.placeholder.com/267x267" alt="">
           <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
@@ -97,7 +99,7 @@
       </ul>
     </section>
 
-    <section>
+    <section class="pagination">
       <h3>Пагинатор</h3>
       <ul>
         <li><a href="">1</a></li>
@@ -109,36 +111,36 @@
     </section>
   </main>
 
-  <footer>
-    <section>
+  <footer class="main-footer">
+    <section class="footer-social">
       <h2>Соцсети</h2>
       <ul>
-        <li><a href="#">Фейсбук</a></li>
-        <li><a href="#">Вконтакте</a></li>
-        <li><a href="#">Инастаграм</a></li>
-        <li><a href="#">Твитер</a></li>
+        <li><a class="social-link" href="#">Фейсбук</a></li>
+        <li><a class="social-link" href="#">Вконтакте</a></li>
+        <li><a class="social-link" href="#">Инастаграм</a></li>
+        <li><a class="social-link" href="#">Твитер</a></li>
       </ul>
     </section>
 
-    <section>
+    <section class="footer-info">
       <h2>Для сотрудничества</h2>
       <ul>
         <li>
-          <a href="#">Для поставщиков</a>
+          <a class="info-link" href="#">Для поставщиков</a>
         </li>
         <li>
-          <a href="#">О производстве</a>
+          <a class="info-link" href="#">О производстве</a>
         </li>
         <li>
-          <a href="#">Наши документы</a>
+          <a class="info-link" href="#">Наши документы</a>
         </li>
         <li>
-          <a href="#">Экологические стандарты</a>
+          <a class="info-link" href="#">Экологические стандарты</a>
         </li>
       </ul>
     </section>
-    <div><img src="https://via.placeholder.com/108x39" alt=""></div>
-    <p><a href="https://htmlacademy.ru/intensive/htmlcss">Сделано в HTML Academy © 2019</a></p>
+    <img src="https://via.placeholder.com/108x39" alt="">
+    <p class="footer-copyright"><a href="https://htmlacademy.ru/intensive/htmlcss">Сделано в HTML Academy © 2019</a></p>
   </footer>
 
 </body>
