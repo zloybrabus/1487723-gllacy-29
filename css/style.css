@@ -26,18 +26,18 @@
 
 :root {
    --basic-white: #ffffff;
-   --basic-black:: #323232;
+   --basic-black: #323232;
    --basic-grey: #849d8f;
    --basic-light: #f8f7f4;
-   --basic-extra-light:#fefefe;
-   --basic-extra-white:#fbfcfb;
+   --basic-extra-light: #fefefe;
+   --basic-extra-white: #fbfcfb;
 }
 
 .page-body { 
     font-family: Roboto;
     font-weight: normal;
-    background:var(--basic-grey);
-    color:var(--basic-white);
+    background: var(--basic-grey);
+    color: var(--basic-white);
 }
 
 .page-body-catalog {
@@ -45,7 +45,7 @@
 }
 
 .main-header-logo {
-  background:var(--basic-extra-white);
+  background: var(--basic-extra-white);
 }
 
 .site-navigation {
@@ -96,7 +96,7 @@
     line-height: 16px;
 }
 
-.filter-items {
+.filter-list {
     font-weight: 500;
     font-size: 16px;
     line-height: 18px;
@@ -152,13 +152,13 @@
     line-height: 30px;
     /****Picture****
     background: url();****/
-    color:var(--basic-black);
+    color: var(--basic-black);
 }
 
 .features-list {
     font-size: 16px;
     line-height: 22px;
-    color:var(--basic-black);
+    color: var(--basic-black);
 }
 
 .news {
@@ -167,28 +167,28 @@
     line-height: 22px;
     /****Picture****
     background: url();****/
-    color:var(--basic-black);
+    color: var(--basic-black);
 }
 
 .news-item {
     font-weight: 700;
     font-size: 24px;
     line-height: 30px;
-    color:var(--basic-black);
+    color: var(--basic-black);
 }
 
 .mailing {
     font-size: 16px;
     line-height: 22px;
-    background:var(--basic-light);
-    color:var(--basic-black);
+    background: var(--basic-light);
+    color: var(--basic-black);
 }
 
 .contacts {
     font-size: 14px;
     line-height: 20px;
-    background:var(--basic-extra-light);
-    color:var(--basic-black);
+    background: var(--basic-extra-light);
+    color: var(--basic-black);
 }
 
 .page-footer { 
