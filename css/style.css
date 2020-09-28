@@ -55,27 +55,42 @@
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
 }
 
-.main-header{
+/*header flex*/
+.main-navigation {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
 }
 
-.container{
-    display: flex;
+.container {
     width: 1146px;
-
 }
 
-.user-navigation{
+.main-navigation-wrapper {
+    display: flex;
+}
+
+.user-navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 220px;
     margin-left: auto;
 }
 
 .site-navigation {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     width: 357px;
-    margin-left: 24px;
+    margin-left: 27px;
+    margin-right: 367px;
+    margin-top: 23px;
   }
 
 .main-header-logo {
+    display: flex;
+    margin-left: 27px;
+    margin-top: 9px;
   /*background: var(--basic-extra-white);*/
 }
 
