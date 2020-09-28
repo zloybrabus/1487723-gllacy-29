@@ -45,9 +45,6 @@
 
 .page-body { 
     min-height: 100%;
-    display: grid;
-    grid-template-rows: min-content 1fr min-content;
-    align-content: start;
     font-family: Roboto;
     font-weight: normal;
     background: var(--basic-grey);
@@ -58,36 +55,36 @@
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
 }
 
-.main-header-logo {
-  /*background: var(--basic-extra-white);*/
+.main-header{
+    display: flex;
+    justify-content: space-between;
 }
 
-.main-navigation{
-    display: grid;
+.container{
+    display: flex;
+    width: 1146px;
+
+}
+
+.user-navigation{
+    margin-left: auto;
+}
+
+.site-navigation {
+    width: 357px;
+    margin-left: 24px;
+  }
+
+.main-header-logo {
+  /*background: var(--basic-extra-white);*/
 }
 
 .main-header-bar {
     background-color: var(--basic-grey);
 }
 
-.main-navigation-wrapper {
-    display: grid;
-    grid-template-columns: 1fr min-content min-content;
-    width: 1146px;
-    margin: 0 auto;
-    padding: 0 10px;
-}
-
-.user-navigation {
-    display: grid;
-}
 
 .site-navigation {
-     margin: 0;
-  padding: 0;
-  outline: 5px solid rgba(0, 255, 255, 0.3);
-  outline-offset: -5px;
-  list-style: none;
     font-weight: 700;
     font-size: 16px;
     line-height: 18px;  
