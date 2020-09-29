@@ -187,6 +187,7 @@
 }
 
 .raspberry-title {
+    text-align: left;
     margin-left: 16px;
     font-weight: 700;
     font-size: 35px;
@@ -195,17 +196,18 @@
 
 .sale-item-raspberry {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     width: 560px;
     margin-left: 16px;
     margin-bottom: 112px;
-    text-align: center;
+    text-align: left;
     font-weight: 700;
     font-size: 18px;
     line-height: 22px;
 }
 
 .chokolate-title {
+    text-align: left;
     margin-left: 16px;
     font-weight: 700;
     font-size: 35px;
@@ -214,11 +216,11 @@
 
 .sale-items-chocolate {
     display: flex;
+    flex-direction: column;
     width: 560px;
-    justify-content: space-between;
     margin-left: 16px;
     margin-bottom: 112px;
-    text-align: center;
+    text-align: left;
     font-weight: 700;
     font-size: 18px;
     line-height: 22px;
@@ -256,7 +258,10 @@
 .features {
     display: flex;
     width: 1146px;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 24px;
+    margin-left: 20px;
+    text-align: left;
     font-weight: 500;
     font-size: 24px;
     line-height: 30px;
@@ -268,24 +273,32 @@
 
 .features-list {
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
     font-size: 16px;
     line-height: 22px;
     color: var(--basic-black);
-    text-align: center;
-  outline: 5px solid rgba(0, 255, 255 , 0.3);
-  outline-offset: -5px;
+    text-align: left;
 }
 
 .features-item {
     display: flex;
-    justify-content: space-between;
+    width: 50%;
     margin-bottom: auto;
-    margin-right: 23px;
-    margin-left: 75px;
+}
+
+.container-news-mail{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    outline: 5px solid rgba(255, 0, 21, 0.863);
+    outline-offset: -5px;
 }
 
 .news {
+    display: flex;
+    width: 560px;
+    text-align: left;
     font-weight: 500;
     font-size: 16px;
     line-height: 22px;
@@ -302,6 +315,10 @@
 }
 
 .mailing {
+    display: flex;
+    width: 548px;
+    margin-left: 32px;
+    text-align: left;
     font-size: 16px;
     line-height: 22px;
     background: var(--basic-light);
