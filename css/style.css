@@ -87,6 +87,19 @@
     margin-top: 9px;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .main-navigation-wrapper {
     display: flex;
 }
@@ -94,25 +107,42 @@
 .user-navigation {
     display: flex;
     justify-content: space-between;
+    list-style: none;
     width: 220px;
     margin-left: auto;
+
+    outline: 5px solid #ff0000;
 }
 
+.user-navigation .login-link {
+    padding-left: 50px;
+    position: relative;
+}
+  
 .site-navigation {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    list-style: none;
     width: 357px;
     margin-left: 27px;
     margin-right: 367px;
     margin-top: 23px;
+
+    outline: 5px solid #ff0000;
   }
+
+.site-navigation a,
+.user-navigation a {
+    color: var(--basic-white);
+    display: block;
+}
 
 .main-header-logo {
     display: flex;
     margin-left: 27px;
     margin-top: 9px;
-  /*background: var(--basic-extra-white);*/
+    /*background: var(--basic-extra-white);*/
 }
 
 .main-header-bar {
@@ -140,6 +170,32 @@
     line-height: 16px;
 }
 
+.login-link exit::before {
+    position: absolute;
+    top: 29px;
+    left: 987px;
+    content: "";
+    width: 20px;
+    height: 19px;
+    background-image: url("/img/exit.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+
+.login-link basket::before {
+    position: absolute;
+    top: 29px;
+    left: 1089px;
+    content: "";
+    width: 20px;
+    height: 19px;
+    background-image: url("/img/basket.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+
 .work-time {
     font-weight: 700;
     font-size: 14px;
@@ -162,8 +218,18 @@
     text-align: center;
 }
 
-.button {
+.button-main-title {
+    position: absolute;
+    left: 461px;
+    top: 544px;
     text-align: center;
+    width: 278px;
+    border-radius: 70px;
+    font-weight: 700;
+    font-size: 32px;
+    color: var(--basic-white);
+    background: linear-gradient(180deg, #F26843 0%, #E74A35 100%);
+    box-shadow: 0px 2px 2px rgba(172, 16, 0, 0.64);
 }
 
 .page-title-catalog {
@@ -233,6 +299,13 @@
     line-height: 22px;
 }
 
+.raspberry {
+    background: url("../img/raspberryback.png");
+    background-position: center;
+    background-repeat: repeat;
+    border-radius: 16px;
+}
+
 .chokolate-title {
     text-align: left;
     margin-left: 16px;
@@ -251,6 +324,13 @@
     line-height: 22px;
 }
 
+.chocolate{
+    background: url("../img/chocolateback.png");
+    background-position: center;
+    background-repeat: repeat;
+    border-radius: 16px;
+}
+
 .button-sale {
     display: flex;
     width: 164px;
@@ -260,6 +340,8 @@
     background: linear-gradient(180deg, #F26843 0%, #E74A35 100%);
     box-shadow: 0px 2px 2px rgba(172, 16, 0, 0.64);
     border-radius: 70px;
+    text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
+    color: var(--basic-white);
 }
 
 .hits {
@@ -284,6 +366,7 @@
 
 .hits-item-catalog {
     display: flex;
+    width: 25%;
     width: 267px;
     height: 267px;
 }
@@ -303,6 +386,9 @@
     font-weight: 500;
     font-size: 24px;
     line-height: 30px;
+    background: url("../img/pattern2.png");
+    background-position: top center;
+    background-repeat: repeat;
     border-radius: 16px;
     color: var(--basic-black);
     outline: 5px solid rgba(255, 0, 0 , 0.3);
@@ -312,9 +398,6 @@
     display: flex;
     flex-wrap: wrap;
     list-style: none;
-    background-image: url("img/pattern2");
-    background-position: top center;
-    background-repeat: no-repeat;
     font-size: 16px;
     line-height: 22px;
     color: var(--basic-black);
@@ -342,8 +425,9 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 22px;
-    /****Picture****
-    background: url();****/
+    background: url("../img/strawberryback.png");
+    background-position: top center;
+    background-repeat: no-repeat;
     color: var(--basic-black);
 }
 
@@ -361,6 +445,10 @@
     text-align: left;
     font-size: 16px;
     line-height: 22px;
+    background: url("../img/mailingback.png");
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    border-radius: 16px;
     background: var(--basic-light);
     color: var(--basic-black);
 }
@@ -368,7 +456,11 @@
 .contacts {
     font-size: 14px;
     line-height: 20px;
-    background: var(--basic-extra-light);
+    background: url("../img/mapsback.png");
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    width: 1200px;
+    height: 430px;
     color: var(--basic-black);
 }
 
@@ -381,7 +473,6 @@
 
 .footer-social {
     display: flex;
-    background: rgba(255, 255, 255, 0.8);
 }
 
 .footer-info {
