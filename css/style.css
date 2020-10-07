@@ -39,12 +39,6 @@
     list-style: none;
 }
 
-.list-styles-reset {
-    margin: 0;
-    padding: 0; 
-    list-style: none;
-}
-
 .page {
     width: 100%;
     height: 100%;
@@ -84,6 +78,11 @@
 .container {
     width: 1146px;
     margin-top: 9px;
+}
+
+.container-catalog {
+    width: 1146px;
+
 }
 
 .visually-hidden {
@@ -164,34 +163,33 @@
 }
 
 .login-link {
+    position: relative;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
 }
 
-.login-link exit::before {
+.login-link.exit::before {
     position: absolute;
-    top: 29px;
-    left: 987px;
+    top: 0px;
+    left: 0px;
     content: "";
     width: 20px;
     height: 19px;
-    background-image: url('/img/exit.svg');
-    background-color: sandybrown;
+    background-image: url('../img/exit.svg');
     background-repeat: no-repeat;
     background-position: 0 0;
 }
 
 
-.login-link basket::before {
+.login-link.basket::before {
     position: absolute;
-    top: 29px;
-    left: 1089px;
+    top: 0px;
+    left: 0px;
     content: "";
     width: 20px;
     height: 19px;
-    background-image: url('/img/basket.svg');
-    background-color: sandybrown;
+    background-image: url('../img/basket.svg');
     background-repeat: no-repeat;
     background-position: 0 0;
 }
@@ -327,7 +325,7 @@
     line-height: 22px;
 }
 
-.chocolate{
+.chocolate {
     background: url('../img/chocolateback.png');
     background-color: sandybrown;
     background-position: center;
@@ -360,7 +358,7 @@
     text-align: center;
 }
 
-.hits-list-catalog {
+.icecream-list-catalog {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -466,8 +464,6 @@
     background-color: sandybrown;
     background-position: bottom center;
     background-repeat: no-repeat;
-    width: 1200px;
-    height: 430px;
     color: var(--basic-black);
 }
 
@@ -480,7 +476,6 @@
 
 .footer-social {
     display: flex;
-    margin-left: auto;
 }
 
 .footer-info {
@@ -489,5 +484,4 @@
 
 .footer-logo {
     display: flex;
-    margin-right: auto;
 }
