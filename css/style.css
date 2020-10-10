@@ -105,11 +105,12 @@
 .user-navigation {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     list-style: none;
-    width: 220px;
-    margin-left: auto;
+    margin-top: 23px;
+    font-weight: 500;
 
-    outline: 5px solid #ff0000;
+   /* outline: 5px solid #ff0000;*/
 }
 
 .user-navigation .login-link {
@@ -126,8 +127,9 @@
     margin-left: 27px;
     margin-right: 367px;
     margin-top: 23px;
+    font-weight: 700;
 
-    outline: 5px solid #ff0000;
+   /* outline: 5px solid #ff0000;*/
   }
 
 .site-navigation a,
@@ -149,6 +151,7 @@
 
 
 .site-navigation {
+    margin-top: 32px;
     font-weight: 700;
     font-size: 16px;
     line-height: 18px;  
@@ -167,6 +170,9 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
+    margin-left: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
 }
 
 .login-link.exit::before {
@@ -287,7 +293,7 @@
     line-height: 41px;
 }
 
-.sale-item
+.sale-item,
 .raspberry {
     display: flex;
     flex-direction: column;
@@ -314,7 +320,7 @@
     line-height: 41px;
 }
 
-.sale-item 
+.sale-item, 
 .chocolate {
     display: flex;
     flex-direction: column;
@@ -350,6 +356,7 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 22px;
+    margin-bottom: 40px;
 }
 
 .hits-list {
@@ -383,6 +390,7 @@
     flex-wrap: wrap;
     margin-top: 24px;
     margin-left: 20px;
+    margin-bottom: 40px;
     text-align: left;
     font-weight: 500;
     font-size: 24px;
@@ -416,6 +424,7 @@
     display: flex;
     justify-content: space-between;
     margin-top: 40px;
+    margin-bottom: 40px;
     outline: 5px solid rgba(255, 0, 21, 0.863);
     outline-offset: -5px;
 }
