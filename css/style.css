@@ -268,6 +268,7 @@
     box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
     border: none;
     cursor: pointer;
+    margin-bottom: 41px;
 }
 
 .button-main:hover {
