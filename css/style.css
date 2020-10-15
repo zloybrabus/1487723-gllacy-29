@@ -230,6 +230,10 @@
     padding-top: 321px;
     text-align: center;
     color: #ffffff;
+    background-image: url('../img/icecream1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+
 }
 
 .slider-list {
@@ -302,6 +306,12 @@
     border: 2px solid #ffffff;
     border-radius: 50%;
     cursor: pointer;
+}
+
+.site-wrapper {
+    background-image: url('../img/icecream2.png');
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .slider-controls .current {
