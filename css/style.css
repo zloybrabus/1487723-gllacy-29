@@ -185,6 +185,7 @@
     background-image: url('../img/exit.svg');
     background-repeat: no-repeat;
     background-position: 0 0;
+    border-radius: 20px;
 }
 
 
@@ -198,6 +199,7 @@
     background-image: url('../img/basket.svg');
     background-repeat: no-repeat;
     background-position: 0 0;
+    border-radius: 20px;
 }
 
 
@@ -450,9 +452,21 @@
 }
 
 .pagination {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
     font-weight: 500;
     font-size: 16px;
     line-height: 18px;
+}
+
+.pagination li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
 }
 
 .features {
@@ -536,6 +550,7 @@
 }
 
 .contacts {
+    display: flex;
     font-size: 14px;
     line-height: 20px;
     background: url('../img/mapsback.png');
@@ -545,12 +560,66 @@
     color: var(--basic-black);
 }
 
+.adress-one, .adress-three {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.adress-too, .contacts-phone {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--basic-black);
+}
+
+.form-contacts {
+    display: flex;
+    width: 383px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    background: #FEFEFE;
+    border-radius: 16px;
+
+    outline: 5px solid rgba(255, 0, 0 , 0.3);
+}
+
+
 .page-footer { 
     display: flex;
     justify-content: space-between;
     font-size: 13px;
     line-height: 18px;
 }
+
+.info-link {
+    color: var(--basic-white);
+    text-decoration: none;
+}
+
+.footer-copyright {
+    color: var(--basic-white);
+    text-decoration: none;
+}
+
+.footer-social ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 164px;
+    margin-top: 36px;
+    margin-bottom: 35px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: rgba(255, 255, 255, 0.8);
+    color: inherit;
+  }
 
 .footer-social {
     display: flex;
