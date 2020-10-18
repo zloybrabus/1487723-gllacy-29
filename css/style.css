@@ -114,6 +114,8 @@ a {
     list-style: none;
     margin-top: 23px;
     font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
 
    /* outline: 5px solid #ff0000;*/
 }
@@ -192,7 +194,6 @@ a {
     background-image: url('../img/exit.svg');
     background-repeat: no-repeat;
     background-position: 0 0;
-    border-radius: 20px;
 }
 
 
@@ -206,7 +207,18 @@ a {
     background-image: url('../img/basket.svg');
     background-repeat: no-repeat;
     background-position: 0 0;
-    border-radius: 20px;
+}
+
+.login-link.search::before {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-image: url('../img/search.svg');
+    background-repeat: no-repeat;
+    background-position: 0 0;
 }
 
 .basket {
@@ -257,9 +269,9 @@ a {
     width: 700px;
     margin: 0 auto;
     margin-bottom: 27px;
+    font-weight: bold;
     font-size: 60px;
     line-height: 60px;
-    font-weight: 800;
 }
 
 .button-main {
@@ -477,8 +489,15 @@ a {
     display: flex;
     text-align: center;
     width: 267px;
-    position: absolute;
     margin-top: 280px;
+}
+
+.icecream-cash {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 35px;
 }
 
 .pagination {
@@ -527,6 +546,12 @@ a {
     outline: 5px solid rgba(255, 0, 0 , 0.3);
 }
 
+.features-title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+}
+
 .features-list {
     display: flex;
     flex-wrap: wrap;
@@ -553,16 +578,21 @@ a {
 
 .news {
     display: flex;
+    flex-wrap: wrap;
     width: 560px;
     text-align: left;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 22px;
     background: url('../img/strawberryback.png');
     background-color: sandybrown;
     background-position: top center;
     background-repeat: no-repeat;
     color: var(--basic-black);
+    border-radius: 16px;
+}
+
+.news-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
 }
 
 .news-item {
@@ -570,13 +600,16 @@ a {
     font-size: 24px;
     line-height: 30px;
     color: var(--basic-black);
+    text-decoration: underline;
 }
 
 .mailing {
     display: flex;
     width: 560px;
     margin-left: 32px;
+    align-items: center;
     text-align: left;
+    font-weight: normal;
     font-size: 16px;
     line-height: 22px;
     background: url('../img/mailingback.png');
@@ -588,8 +621,30 @@ a {
     color: var(--basic-black);
 }
 
+.button-mailing {
+    display: inline-block;
+    width: 130px;
+    padding: 14px 19px 13px 19px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #ffffff;
+    vertical-align: top;
+    text-decoration: none;
+    text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+    background: #f26843;
+    background: linear-gradient(to bottom, #f26843, #e74a35);
+    border-radius: 70px;
+    box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+    border: none;
+    cursor: pointer;
+    margin-bottom: 36px;
+}
+
 .contacts {
     display: flex;
+    width: 1200px;
     font-size: 14px;
     line-height: 20px;
     background: url('../img/mapsback.png');
@@ -597,15 +652,18 @@ a {
     background-position: bottom center;
     background-repeat: no-repeat;
     color: var(--basic-black);
+    border-radius: 16px;
 }
 
 .adress-one, .adress-three {
+    text-align: left;
     font-weight: normal;
     font-size: 14px;
     line-height: 20px;
 }
 
 .adress-too, .contacts-phone {
+    text-align: left;
     font-weight: bold;
     font-size: 18px;
     line-height: 24px;
@@ -616,17 +674,38 @@ a {
     display: flex;
     width: 383px;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    margin-left: 870px;
     background: #FEFEFE;
     border-radius: 16px;
 
     outline: 5px solid rgba(255, 0, 0 , 0.3);
 }
 
+.link-form {
+    display: inline-block;
+    width: 253px;
+    padding: 14px 19px 13px 19px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #ffffff;
+    vertical-align: top;
+    text-decoration: none;
+    text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+    background: #f26843;
+    background: linear-gradient(to bottom, #f26843, #e74a35);
+    border-radius: 70px;
+    box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+    border: none;
+    cursor: pointer;
+    margin-bottom: 36px;
+}
 
 .page-footer { 
     display: flex;
     justify-content: space-between;
+    margin-top: 18px;
     font-size: 13px;
     line-height: 18px;
 }
@@ -667,8 +746,12 @@ a {
 
 .footer-info {
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .footer-logo {
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
