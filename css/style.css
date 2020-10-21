@@ -188,7 +188,7 @@ a {
     position: absolute;
     top: 0px;
     left: 0px;
-    content: "";
+    content: '';
     width: 20px;
     height: 19px;
     background-image: url('../img/exit.svg');
@@ -201,7 +201,7 @@ a {
     position: absolute;
     top: 0px;
     left: 0px;
-    content: "";
+    content: '';
     width: 20px;
     height: 19px;
     background-image: url('../img/basket.svg');
@@ -213,7 +213,7 @@ a {
     position: absolute;
     top: 0px;
     left: 0px;
-    content: "";
+    content: '';
     width: 16px;
     height: 16px;
     background-image: url('../img/search.svg');
@@ -221,7 +221,7 @@ a {
     background-position: 0 0;
 }
 
-.basket {
+.user-basket {
     margin-left: 10px;
 }
 
@@ -390,7 +390,7 @@ a {
     justify-content: space-between;
     margin: 0;
     padding: 0;
-    margin-bottom: 112px;
+    margin-bottom: 0;
 }
 
 .raspberry-title {
@@ -495,6 +495,7 @@ a {
     font-weight: 500;
     font-size: 16px;
     line-height: 22px;
+    margin-top: 40px;
     margin-bottom: 40px;
 }
 
@@ -518,9 +519,10 @@ a {
     height: 267px;
 }
 
-.icecream-text {
+.icecream-title {
     display: flex;
     text-align: center;
+    margin-top: 13px;
     width: 267px;
 }
 
@@ -528,8 +530,9 @@ a {
     display: flex;
     align-items: center;
     font-weight: bold;
-    font-size: 30px;
-    line-height: 35px;
+    font-size: 45px;
+    line-height: 45px;
+    margin-top: -53px;
 }
 
 .pagination {
@@ -636,7 +639,7 @@ a {
 .features-item.one::before {
     top: 0px;
     left: 0px;
-    content: "";
+    content: '';
     width: 16px;
     height: 32px;
     background-image: url('../img/Мороженое.svg');
@@ -647,7 +650,7 @@ a {
 .features-item.two::before {
     top: 0px;
     left: 0px;
-    content: "";
+    content: '';
     width: 16px;
     height: 27px;
     background-image: url('../img/Листик.svg');
@@ -658,7 +661,7 @@ a {
 .features-item.three::before {
     top: 0px;
     left: 0px;
-    content: "";
+    content: '';
     width: 24px;
     height: 24px;
     background-image: url('../img/Корова.svg');
@@ -669,7 +672,7 @@ a {
 .features-item.four::before {
     top: 0px;
     left: 0px;
-    content: "";
+    content: '';
     width: 16px;
     height: 27px;
     background-image: url('../img/Градусник.svg');
