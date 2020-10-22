@@ -2,27 +2,19 @@
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/roboto-v20-latin_cyrillic-regular.eot'); 
     src: local('Roboto'), local('Roboto-Regular'),
-         url('../fonts/roboto-v20-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'), 
-         url('../fonts/roboto-v20-latin_cyrillic-regular.woff2') format('woff2'), 
-         url('../fonts/roboto-v20-latin_cyrillic-regular.woff') format('woff'), 
-         url('../fonts/roboto-v20-latin_cyrillic-regular.ttf') format('truetype'), 
-         url('../fonts/roboto-v20-latin_cyrillic-regular.svg#Roboto') format('svg'); 
-  }
- 
-  @font-face {
+    url('../fonts/roboto.woff2') format('woff2'),
+    url('../fonts/roboto.woff') format('woff'),
+    }
+    
+    @font-face {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
-    src: url('../fonts/roboto-v20-latin_cyrillic-700.eot'); 
     src: local('Roboto Bold'), local('Roboto-Bold'),
-         url('../fonts/roboto-v20-latin_cyrillic-700.eot?#iefix') format('embedded-opentype'), 
-         url('../fonts/roboto-v20-latin_cyrillic-700.woff2') format('woff2'), 
-         url('../fonts/roboto-v20-latin_cyrillic-700.woff') format('woff'), 
-         url('../fonts/roboto-v20-latin_cyrillic-700.ttf') format('truetype'), 
-         url('../fonts/roboto-v20-latin_cyrillic-700.svg#Roboto') format('svg'); 
-  }
+    url('../fonts/robotobold.woff2') format('woff2'),
+    url('../fonts/robotobold.woff') format('woff'),
+    }
 
 :root {
    --basic-white: #ffffff;
@@ -57,7 +49,7 @@ a {
 
 .page-body { 
     min-height: 100%;
-    font-family: Roboto Arial;
+    font-family: Roboto, Arial, Sans-serif;
     font-weight: normal;
     margin-left: 27px;
     margin-right: 27px;
@@ -76,6 +68,7 @@ a {
 /*header flex*/
 .main-navigation {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
 }
@@ -169,10 +162,18 @@ a {
 
 .site-navigation-mini {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     text-align: center;
     font-size: 14px;
     line-height: 16px;
+    margin-top: 28px;
+    margin-bottom: 13px;
+    margin-left: 27px;
+}
+
+.site-navigation-mini a {
+    padding-right: 22px;
 }
 
 .login-link {
@@ -349,10 +350,13 @@ a {
     font-weight: 700;
     font-size: 35px;
     line-height: 41px;
+    margin-top: 0;
+    margin-left: 27px;
 }
 
 .filter-container {
     display: flex;
+    flex-wrap: wrap;
     text-align: left;
     outline: 5px solid rgba(0, 255, 0, 0.7);
     outline-offset: -5px;
@@ -496,7 +500,7 @@ a {
     font-size: 16px;
     line-height: 22px;
     margin-top: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
 }
 
 .hits-list {
@@ -510,13 +514,13 @@ a {
     justify-content: space-between;
     flex-wrap: wrap;
     text-align: center;
+    margin-top: 40px;
 }
 
 .icecream-item {
     position: relative;
     width: 25%;
     width: 267px;
-    height: 267px;
 }
 
 .icecream-title {
@@ -565,8 +569,7 @@ a {
 .features {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 97px;
-    margin-left: 20px;
+    margin-top: 40px;
     margin-bottom: 40px;
     text-align: left;
     font-weight: 500;
@@ -583,6 +586,7 @@ a {
 .features-title {
     text-align: left;
     margin-top: 24px;
+    margin-bottom: 21px;
     margin-left: 20px;
     margin-right: 131px;
     font-weight: 500;
@@ -594,7 +598,6 @@ a {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
-    margin-left: 75px;
     margin-right: 23px;
     font-size: 16px;
     line-height: 22px;
@@ -603,6 +606,8 @@ a {
 }
 
 .features-item {
+    position: relative;
+    box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
     width: 50%;
@@ -610,74 +615,107 @@ a {
     font-size: 16px;
     line-height: 22px;
     margin-bottom: auto;
+    margin-left: 0;
 }
 
 .one {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    padding-left: 75px;
+    margin-bottom: 33px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
 }
 
 .two {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    padding-left: 75px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
 }
 
 .three {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    padding-left: 81px;
+    margin-bottom: 36px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
 }
 
 .four {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    padding-left: 82px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
 }
 
 .features-item.one::before {
+    position: absolute;
     top: 0px;
     left: 0px;
     content: '';
-    width: 16px;
-    height: 32px;
+    width: 49px;
+    height: 49px;
     background-image: url('../img/Мороженое.svg');
     background-repeat: no-repeat;
     background-position: 0 0;
-}
-
-.features-item.two::before {
-    top: 0px;
-    left: 0px;
-    content: '';
-    width: 16px;
-    height: 27px;
-    background-image: url('../img/Листик.svg');
-    background-repeat: no-repeat;
-    background-position: 0 0;
+    margin-left: 20px;
+    margin-top: 7px;
 }
 
 .features-item.three::before {
+    position: absolute;
     top: 0px;
     left: 0px;
     content: '';
-    width: 24px;
-    height: 24px;
+    width: 49px;
+    height: 49px;
+    background-image: url('../img/Листик.svg');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    margin-left: 20px;
+    margin-top: 19px;
+}
+
+.features-item.two::before {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    content: '';
+    width: 49px;
+    height: 49px;
     background-image: url('../img/Корова.svg');
     background-repeat: no-repeat;
     background-position: 0 0;
+    margin-left: 26px;
+    margin-right: 6px;
+    margin-top: 7px;
 }
 
 .features-item.four::before {
+    position: absolute;
     top: 0px;
     left: 0px;
     content: '';
-    width: 16px;
-    height: 27px;
+    width: 49px;
+    height: 49px;
     background-image: url('../img/Градусник.svg');
     background-repeat: no-repeat;
     background-position: 0 0;
+    margin-left: 27px;
+    margin-right: 6px;
+    margin-top: 19px;
 }
 
 .container-news-mail {
@@ -915,4 +953,8 @@ a {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+}
+
+.footer-copyright {
+    margin-bottom: 8px;
 }
