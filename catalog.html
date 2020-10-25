@@ -21,7 +21,7 @@
      <ul class="user-navigation list-styles-reset">
          <li><a href="#">Вход</a></li>
          <li><a href="#">2 товара</a></li>
-         <li>с 10 до 20, ежедневно<br>
+         <li><br>с 10 до 20, ежедневно<br>
            <a href="tel:88124502525">8 812 450-25-25</a>
          </li>
      </ul>
@@ -38,90 +38,134 @@
     <h1 class="page-title-catalog">Сливочное мороженое</h1>
     <section class="filter-container">
       <h2 class="visually-hidden">Фильтр</h2>
-      <h3 class="filter">Сортировка</h3>
-      <ul class="filter-list list-styles-reset">
-        <li>По популярности</li>
+      <h3 class="filter">Сортировка:</h3>
+      <ul class="filter-list-sorting list-styles-reset">
+        <li>
+          <select class="filter-sorting">
+            <option selected value='по популярности'>по популярности</option>
+            <option value='сначала недорогие'>сначала недорогие</option>
+            <option value='сначала дорогие'>сначала дорогие</option>
+            <option value='по жирности'>по жирности</option>
+          </select>
+        </li>
       </ul>
       <h3 class="filter">Цена: 100 ₽ – 500 ₽</h3>
+      <ul class="cash-range">
+        <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="toggle toggle-min"></div>
+            <div class="toggle toggle-max"></div>
+        </div>
+      </ul>
       <h3 class="filter">Жирность:</h3>
-      <ul class="filter-list list-styles-reset">
-        <li>0%</li>
-        <li>до 10%</li>
-        <li>до 30%</li>
-        <li>выше 30%</li>
+      <ul class="filter-list-fat list-styles-reset">
+        <li class="filter-option filter-checkbox">
+          <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="0%" id="filter-0%">
+          <label for="filter-0%">0%</label>
+        </li>
+        <li class="filter-option filter-checkbox">
+          <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="10%" id="filter-10%">
+          <label for="filter-10%">до 10%</label>
+        </li>
+        <li class="filter-option filter-checkbox">
+          <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="under30%" id="filter-under30%">
+          <label for="filter-under30%">до 30%</label>
+        </li>
+        <li class="filter-option filter-checkbox">
+          <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="height30%" id="filter-height30%">
+          <label for="filter-height30%">выше 30%</label>
+        </li>
       </ul>
+
       <h3 class="filter">Наполнители:</h3>
-      <ul class="filter-list list-styles-reset">
-        <li>шоколадные</li>
-        <li>сахарные присыпки</li>
-        <li>фрукты</li>
-        <li>сиропы</li>
-        <li>джемы</li>
+      <ul class="filter-list-fillers list-styles-reset">
+        <li class="fillers-option">
+          <input class="visually-hidden filter-input-checkbox-too filter-input" type="checkbox" name="chocolat" id="filter-chocolat">
+          <label for="filter-chocolat">шоколадные</label>
+        </li>
+        <li class="fillers-option">
+          <input class="visually-hidden filter-input-checkbox-too filter-input" type="checkbox" name="sugar" id="filter-sugar">
+          <label for="filter-sugar">сахарные присыпки</label>
+        </li>
+        <li class="fillers-option">
+          <input class="visually-hidden filter-input-checkbox-too filter-input" type="checkbox" name="frutit" id="filter-frutit">
+          <label for="filter-frutit">фрукты</label>
+        </li>
+        <li class="fillers-option">
+          <input class="visually-hidden filter-input-checkbox-too filter-input" type="checkbox" name="syrups" id="filter-syrups">
+          <label for="filter-syrups">сиропы</label>
+        </li>
+        <li class="fillers-option">
+          <input class="visually-hidden filter-input-checkbox-too filter-input" type="checkbox" name="jams" id="filter-jams">
+          <label for="filter-jams">джемы</label>
+        </li>
       </ul>
-      <button>Применить</button>
+      <button class="filter-button" type="submit">Применить</button>
     </section>
 
     <section>
       <h2 class="visually-hidden">Ассортимент</h2>
       <ul class="icecream-list-catalog list-styles-reset">
           <li class="icecream-item">
-            <img src="img/hit1.png" width="267" alt="Красивое сливочное мороженое">
-            <span class="icecream-cash">310 ₽/1кг</span>
+            <img src="img/hit1.png" width="267" height="267" alt="Красивое сливочное мороженое">
+            <span class="icecream-cash">310 ₽/кг</span>
             <h3 class="icecream-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
          </li>
          <li class="icecream-item">
-           <img src="img/hit2.png" width="267" alt="Красивое сливочно-кофейное мороженое">
-           <span class="icecream-cash">380 ₽/1кг</span>
+           <img src="img/hit2.png" width="267" height="267" alt="Красивое сливочно-кофейное мороженое">
+           <span class="icecream-cash">380 ₽/кг</span>
            <h3 class="icecream-title">Сливочно-кофейное с кусочками шоколада</h3>
          </li>
          <li class="icecream-item">
-           <img src="img/hit3.png" width="267" alt="Красивое сливочно-клубничное мороженое">
-           <span class="icecream-cash">355 ₽/1кг</span>
+           <img src="img/hit3.png" width="267" height="267" alt="Красивое сливочно-клубничное мороженое">
+           <span class="icecream-cash">355 ₽/кг</span>
            <h3 class="icecream-title">Сливочно-клубничное с присыпкой из белого шоколада</h3>
          </li>
          <li class="icecream-item">
-           <img src="img/hit4.png" width="267" alt="Красивое крем-брюле">
-           <span class="icecream-cash">415 ₽/1кг</span>
+           <img src="img/hit4.png" width="267" height="267" alt="Красивое крем-брюле">
+           <span class="icecream-cash">415 ₽/кг</span>
            <h3 class="icecream-title">Сливочное крем-брюле с карамельной подливкой</h3>
          </li>
          <li class="icecream-item">
-           <img src="img/product.png" width="267" alt="Красивое мороженое с брусничным джемом">
-           <span class="icecream-cash">325 ₽/1кг</span>
+           <img src="img/product.png" width="267" height="267" alt="Красивое мороженое с брусничным джемом">
+           <span class="icecream-cash">325 ₽/кг</span>
            <h3 class="icecream-title">Сливочное с брусничным джемом</h3>
          </li>
          <li class="icecream-item">
-           <img src="img/product1.png" width="267" alt="Красивое мороженое с ягодами">
-           <span class="icecream-cash">410 ₽/1кг</span>
+           <img src="img/product1.png" width="267" height="267" alt="Красивое мороженое с ягодами">
+           <span class="icecream-cash">410 ₽/кг</span>
            <h3 class="icecream-title">Сливочно-черничное с цельными ягодами черники</h3>
          </li>
          <li class="icecream-item">
-           <img src="img/product2.png" width="267" alt="Красивое лимонное мороженое">
-           <span class="icecream-cash">315 ₽/1кг</span>
+           <img src="img/product2.png" width="267" height="267" alt="Красивое лимонное мороженое">
+           <span class="icecream-cash">315 ₽/кг</span>
            <h3 class="icecream-title">Сливочно-лимонное с карамельной присыпкой</h3>
          </li>
          <li class="icecream-item">
-           <img src="img/product3.png" width="267" alt="Красивое мороженое с шоколадной стружкой">
-           <span class="icecream-cash">320 ₽/1кг</span>
+           <img src="img/product3.png" width="267" height="267" alt="Красивое мороженое с шоколадной стружкой">
+           <span class="icecream-cash">320 ₽/кг</span>
            <h3 class="icecream-title">Сливочное с шоколадной стружкой</h3>
          </li>
          <li class="icecream-item">
-           <img src="img/product4.png" width="267" alt="Красивое мороженое с большими кусочками шоколада">
-           <span class="icecream-cash">440 ₽/1кг</span>
+           <img src="img/product4.png" width="267" height="267" alt="Красивое мороженое с большими кусочками шоколада">
+           <span class="icecream-cash">440 ₽/кг</span>
            <h3 class="icecream-title">Сливочно-ванильное с кусочками шоколада</h3>
          </li>
          <li class="icecream-item">
-           <img src="img/product5.png" width="267" alt="Красивое мороженое с зеленым сиропом">
-           <span class="icecream-cash">435 ₽/1кг</span>
+           <img src="img/product5.png" width="267" height="267" alt="Красивое мороженое с зеленым сиропом">
+           <span class="icecream-cash">435 ₽/кг</span>
            <h3 class="icecream-title">Сливочноe с ментоловым сиропом</h3>
          </li>
          <li class="icecream-item">
-           <img src="img/product6.png" width="267" alt="Красивое мороженое с большими кусочками горького шоколада">
-           <span class="icecream-cash">355 ₽/1кг</span>
+           <img src="img/product6.png" width="267" height="267" alt="Красивое мороженое с большими кусочками горького шоколада">
+           <span class="icecream-cash">355 ₽/кг</span>
            <h3 class="icecream-title">Сливочное с кусочками черного шоколада</h3>
           </li>
          <li class="icecream-item">
-           <img src="img/product7.png" width="267" alt="Красивое мороженое с салатовым сиропом">
-           <span class="icecream-cash">420 ₽/1кг</span>
+           <img src="img/product7.png" width="267" height="267" alt="Красивое мороженое с салатовым сиропом">
+           <span class="icecream-cash">420 ₽/кг</span>
            <h3 class="icecream-title">Сливочное с мятным сиропом</h3>
          </li>
       </ul>

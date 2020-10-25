@@ -11,7 +11,7 @@
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
-    src: local('Roboto Bold'), local('Roboto-Bold'),
+    src: local('Roboto Bold'),
     url('../fonts/robotobold.woff2') format('woff2'),
     url('../fonts/robotobold.woff') format('woff'),
     }
@@ -49,7 +49,7 @@ a {
 
 .page-body { 
     min-height: 100%;
-    font-family: Roboto, Arial, Sans-serif;
+    font-family: Roboto, Arial, sans-serif;
     font-weight: normal;
     margin-left: 27px;
     margin-right: 27px;
@@ -80,7 +80,6 @@ a {
 
 .container-catalog {
     width: 1146px;
-
 }
 
 .visually-hidden {
@@ -185,41 +184,32 @@ a {
     border-radius: 20px;
 }
 
-.login-link.exit::before {
+.login-link::before {
     position: absolute;
-    top: 0px;
-    left: 0px;
-    content: '';
+    top: 0;
+    left: 0;
+    content: ''; 
+    background-repeat: no-repeat;
+    background-position: 0 0;  
+}
+
+.login-link.exit::before {
     width: 20px;
     height: 19px;
     background-image: url('../img/exit.svg');
-    background-repeat: no-repeat;
-    background-position: 0 0;
 }
 
 
 .login-link.basket::before {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    content: '';
     width: 20px;
     height: 19px;
     background-image: url('../img/basket.svg');
-    background-repeat: no-repeat;
-    background-position: 0 0;
 }
 
 .login-link.search::before {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    content: '';
     width: 16px;
     height: 16px;
     background-image: url('../img/search.svg');
-    background-repeat: no-repeat;
-    background-position: 0 0;
 }
 
 .user-basket {
@@ -351,6 +341,7 @@ a {
     font-size: 35px;
     line-height: 41px;
     margin-top: 0;
+    margin-bottom: 0;
     margin-left: 27px;
 }
 
@@ -358,17 +349,17 @@ a {
     display: flex;
     flex-wrap: wrap;
     text-align: left;
-    outline: 5px solid rgba(0, 255, 0, 0.7);
-    outline-offset: -5px;
-
 }
 
 .filter {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
+    margin-top: 29px;
+    margin-bottom: 7px;
 }
 
 .filter-list {
@@ -379,6 +370,185 @@ a {
     line-height: 18px;
     border-radius: 20px;
     background: rgba(255, 255, 255, 0.2);
+}
+
+.filter-list-sorting {
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+    width: 196px;
+    height: 36px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.2);    
+}
+
+.filter-sorting {
+    width: 155px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 0;
+    outline: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--basic-white);
+}
+
+.range-controls {
+    position: relative;
+    width: 218px;
+    height: 36px;
+    padding-top: 18px;
+    padding-right: 21px;
+    padding-left: 21px;  
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+}
+
+.range-controls .scale {
+    width: 176px;
+    height: 0;
+    border: 2px solid rgba(248, 247, 244, 0.5);
+}
+
+.range-controls .bar {
+    width: 106px;
+    margin-left: 13px;
+    height: 0;
+    border: 2px solid #F8F7F4;
+ }
+
+.range-controls .toggle {
+    width: 4px;
+    height: 4px;
+    padding: 0;
+    border: 8px solid #ffffff;
+    background-color: #ababab;
+    border-radius: 50%;
+    position: absolute;
+    top: 11px;
+    cursor: pointer;
+}
+
+.range-controls .toggle-min {
+    left: 34px;
+}
+  
+.range-controls .toggle-max {
+    left: 132px;
+}
+
+.filter-list-fat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 425px;
+    height: 36px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+}
+
+.cash-range {
+
+}
+
+.filter-option label {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    user-select: none;
+    padding-left: 33px;
+    margin-left: 14px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.filter-input-checkbox + label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 22px;
+    height: 22px;
+    background-image: url(../img/radio-off.svg);
+    border-radius: 50%;
+}
+
+.filter-input-checkbox:checked + label::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 7.92px;
+    height: 7.92px;
+    background-image: url(../img/radio-on.svg);
+    border-radius: 50%;
+    padding-left: 14px;
+    padding-top: 7px;
+}
+
+.filter-list-fillers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 711px;
+    height: 36px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+}
+
+.fillers-option label {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    user-select: none;
+    padding-left: 33px;
+    margin-left: 14px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.filter-input-checkbox-too + label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/checkbox-off.svg);
+}
+
+.filter-input-checkbox-too:checked + label::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 20px;
+    background-image: url(../img/checkbox-on.svg);
+    padding-right: 8px;
+    padding-top: 8px;
+}
+
+.filter-button {
+    display: flex;
+    align-items: flex-end;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--basic-white);
+    padding: 14px 29px 9px 29px;
+    width: 144px;
+    height: 36px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 20px;
 }
 
 .button {
@@ -472,9 +642,9 @@ a {
     line-height: 24px;
     align-items: center;
     background: linear-gradient(180deg, #F26843 0%, #E74A35 100%);
-    box-shadow: 0px 2px 2px rgba(172, 16, 0, 0.64);
+    box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
     border-radius: 70px;
-    text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
+    text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
     color: var(--basic-white);
 }
 
@@ -489,9 +659,9 @@ a {
     line-height: 24px;
     align-items: center;
     background: linear-gradient(180deg, #F26843 0%, #E74A35 100%);
-    box-shadow: 0px 2px 2px rgba(172, 16, 0, 0.64);
+    box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
     border-radius: 70px;
-    text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
+    text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
     color: var(--basic-white);
 }
 
@@ -500,7 +670,7 @@ a {
     font-size: 16px;
     line-height: 22px;
     margin-top: 40px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 .hits-list {
@@ -660,59 +830,44 @@ a {
     line-height: 22px;
 }
 
-.features-item.one::before {
+.features-item::before {
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     content: '';
-    width: 49px;
-    height: 49px;
-    background-image: url('../img/Мороженое.svg');
     background-repeat: no-repeat;
     background-position: 0 0;
+}
+
+.features-item.one::before {
+    width: 49px;
+    height: 49px;
+    background-image: url('../img/icecreamMini.svg');
     margin-left: 20px;
     margin-top: 7px;
 }
 
 .features-item.three::before {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    content: '';
     width: 49px;
     height: 49px;
-    background-image: url('../img/Листик.svg');
-    background-repeat: no-repeat;
-    background-position: 0 0;
+    background-image: url('../img/leaf.svg');
     margin-left: 20px;
     margin-top: 19px;
 }
 
 .features-item.two::before {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    content: '';
     width: 49px;
     height: 49px;
-    background-image: url('../img/Корова.svg');
-    background-repeat: no-repeat;
-    background-position: 0 0;
+    background-image: url('../img/cow.svg');
     margin-left: 26px;
     margin-right: 6px;
     margin-top: 7px;
 }
 
 .features-item.four::before {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    content: '';
     width: 49px;
     height: 49px;
-    background-image: url('../img/Градусник.svg');
-    background-repeat: no-repeat;
-    background-position: 0 0;
+    background-image: url('../img/thermometer.svg');
     margin-left: 27px;
     margin-right: 6px;
     margin-top: 19px;
