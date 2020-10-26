@@ -349,22 +349,26 @@ a {
     display: flex;
     flex-wrap: wrap;
     text-align: left;
+    width: 869px;
+    margin-left: 27px;
+    margin-top: 29px;
 }
 
 .filter {
-    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
-    margin-top: 29px;
-    margin-bottom: 7px;
+    margin-top: 0;
+    margin-bottom: 0px;
+    padding-bottom: 7px;
 }
 
 .filter-list {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     font-weight: 500;
     font-size: 16px;
     line-height: 18px;
@@ -382,7 +386,9 @@ a {
     font-size: 16px;
     line-height: 18px;
     border-radius: 20px;
-    background: rgba(255, 255, 255, 0.2);    
+    background: rgba(255, 255, 255, 0.2); 
+    margin-left: -84px;
+    margin-top: 20px;
 }
 
 .filter-sorting {
@@ -394,6 +400,44 @@ a {
     font-size: 16px;
     line-height: 18px;
     color: var(--basic-white);
+}
+
+.filter-title-cash {
+    margin-left: 31px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 0;
+    margin-bottom: 0px;
+    padding-bottom: 7px;
+}
+
+.filter-title-fat {
+    margin-left: 31px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 0;
+    margin-bottom: 0px;
+    padding-bottom: 7px;
+}
+
+.filter-title-fillers {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    margin-right: 761px;
+    margin-top: -70px;
+    margin-bottom: 0px;
+    padding-bottom: 7px;
+    margin-left: 16px;
+
+}
+
+.cash-range {
+    margin-top: 20px;
+    margin-bottom: 74px;
+    margin-left: -183px;
 }
 
 .range-controls {
@@ -448,10 +492,9 @@ a {
     height: 36px;
     background: rgba(255, 255, 255, 0.2);
     border-radius: 20px;
-}
-
-.cash-range {
-
+    margin-right: -290px;
+    margin-top: 20px;
+    margin-left: -85px;
 }
 
 .filter-option label {
@@ -498,6 +541,7 @@ a {
     height: 36px;
     background: rgba(255, 255, 255, 0.2);
     border-radius: 20px;
+    margin-top: -48px;
 }
 
 .fillers-option label {
@@ -549,6 +593,8 @@ a {
     border: 2px solid #FFFFFF;
     box-sizing: border-box;
     border-radius: 20px;
+    margin-top: -48px;
+    margin-left: 14px;
 }
 
 .button {
