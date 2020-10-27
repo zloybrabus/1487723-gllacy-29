@@ -248,7 +248,8 @@ a {
     text-align: center;
     color: #ffffff;
     background-image: url('../img/icecream1.png');
-    background-position: center;
+    background-size: 372px 584px;
+    background-position: left 277px top 27px;
     background-repeat: no-repeat;
 
 }
@@ -328,7 +329,8 @@ a {
 
 .site-wrapper {
     background-image: url('../img/icecream2.png');
-    background-position: center;
+    background-size: 333px 519px;
+    background-position: right 276px top 126px;
     background-repeat: no-repeat;
 }
 
@@ -933,8 +935,8 @@ a {
     width: 560px;
     text-align: left;
     background: url('../img/strawberryback.png');
-    background-color: sandybrown;
-    background-position: top center;
+    background-color: var(--basic-extra-light);
+    background-position: top center bottom;
     background-repeat: no-repeat;
     color: var(--basic-black);
     border-radius: 16px;
@@ -955,7 +957,7 @@ a {
     font-size: 24px;
     line-height: 30px;
     margin-left: 20px;
-    margin-top: 15px;
+    margin-bottom: 94px;
     margin-right: 253px;
     color: var(--basic-black);
     text-decoration: underline;
@@ -1029,7 +1031,7 @@ a {
     font-size: 14px;
     line-height: 20px;
     background: url('../img/mapsback.png');
-    background-color: sandybrown;
+    background-color: var(--basic-extra-light);
     background-position: bottom center;
     background-repeat: no-repeat;
     color: var(--basic-black);
@@ -1113,6 +1115,26 @@ a {
 .info-link {
     color: var(--basic-white);
     text-decoration: none;
+    padding-bottom: 11px;
+}
+
+.left {
+    padding-left: 7px;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.left-too {
+    margin-left: 32px;
+}
+
+.right {
+    margin-left: 22px;
+}
+
+.right-too {
+    margin-left: 49px;
 }
 
 .footer-copyright {
@@ -1135,7 +1157,6 @@ a {
     justify-content: center;
     width: 32px;
     height: 32px;
-    background: rgba(255, 255, 255, 0.8);
     color: inherit;
     border-radius: 50%;
   }
@@ -1148,14 +1169,23 @@ a {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    width: 327px;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
 }
 
 .footer-logo {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    width: 190px;
 }
 
 .footer-copyright {
-    margin-bottom: 8px;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 26px;
+    margin-top: 8px;
 }
