@@ -518,7 +518,7 @@ a {
     top: 0;
     width: 22px;
     height: 22px;
-    background-image: url(../img/radio-off.svg);
+    background-image: url('../img/radio-off.svg');
     border-radius: 50%;
 }
 
@@ -529,7 +529,7 @@ a {
     top: 0;
     width: 7.92px;
     height: 7.92px;
-    background-image: url(../img/radio-on.svg);
+    background-image: url('../img/radio-on.svg');
     border-radius: 50%;
     padding-left: 14px;
     padding-top: 7px;
@@ -565,7 +565,7 @@ a {
     top: 0;
     width: 20px;
     height: 20px;
-    background-image: url(../img/checkbox-off.svg);
+    background-image: url('../img/checkbox-off.svg');
 }
 
 .filter-input-checkbox-too:checked + label::after {
@@ -576,7 +576,7 @@ a {
     background-repeat: no-repeat;
     width: 24px;
     height: 20px;
-    background-image: url(../img/checkbox-on.svg);
+    background-image: url('../img/checkbox-on.svg');
     padding-right: 8px;
     padding-top: 8px;
 }
@@ -609,10 +609,10 @@ a {
 
 .sale-list {
     display: flex;
-    justify-content: space-between;
     margin: 0;
     padding: 0;
     margin-bottom: 0;
+    margin-left: 27px;
 }
 
 .raspberry-title {
@@ -631,6 +631,9 @@ a {
     flex-direction: column;
     width: 560px;
     text-align: left;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
 }
 
 .raspberry {
@@ -666,7 +669,7 @@ a {
     flex-direction: column;
     width: 560px;
     text-align: left;
-    font-weight: 700;
+    font-weight: bold;
     font-size: 18px;
     line-height: 22px;
 }
@@ -677,6 +680,7 @@ a {
     background-position: center;
     background-repeat: repeat;
     border-radius: 16px;
+    margin-left: 26px;
 }
 
 .button-sale-chokolate{
@@ -719,11 +723,11 @@ a {
     line-height: 22px;
     margin-top: 40px;
     margin-bottom: 0;
+    margin-left: 27px;
 }
 
 .hits-list {
     display: flex;
-    justify-content: space-between;
     text-align: center;
 }
 
@@ -739,13 +743,34 @@ a {
     position: relative;
     width: 25%;
     width: 267px;
+    margin-left: 26px;
+}
+
+.icecream-item:first-child {
+    margin-left: 0;
+}
+
+.icecream-item-home::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 61px;
+    height: 61px;
+    background-image: url('../img/hitt.svg');
+    margin-right: 206px;
+    margin-bottom: 206px;
+
 }
 
 .icecream-title {
     display: flex;
     text-align: center;
-    margin-top: 13px;
+    margin-top: 23px;
     width: 267px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
 }
 
 .icecream-cash {
@@ -754,7 +779,7 @@ a {
     font-weight: bold;
     font-size: 45px;
     line-height: 45px;
-    margin-top: -53px;
+    margin-top: -63px;
 }
 
 .pagination {
@@ -787,8 +812,10 @@ a {
 .features {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 40px;
+    width: 1146px;
+    margin-top: 30px;
     margin-bottom: 40px;
+    margin-left: 27px;
     text-align: left;
     font-weight: 500;
     font-size: 24px;
@@ -804,9 +831,9 @@ a {
 .features-title {
     text-align: left;
     margin-top: 24px;
-    margin-bottom: 21px;
+    margin-bottom: 0;
     margin-left: 20px;
-    margin-right: 131px;
+    margin-right: 0;
     font-weight: 500;
     font-size: 24px;
     line-height: 30px;
@@ -841,7 +868,6 @@ a {
     flex-wrap: wrap;
     align-items: center;
     padding-left: 75px;
-    margin-bottom: 33px;
     font-weight: normal;
     font-size: 16px;
     line-height: 22px;
@@ -862,10 +888,10 @@ a {
     flex-wrap: wrap;
     align-items: center;
     padding-left: 81px;
-    margin-bottom: 36px;
     font-weight: normal;
     font-size: 16px;
     line-height: 22px;
+    margin-top: -10px;
 }
 
 .four {
@@ -876,6 +902,8 @@ a {
     font-weight: normal;
     font-size: 16px;
     line-height: 22px;
+    margin-top: -10px;
+    margin-bottom: 36px;
 }
 
 .features-item::before {
@@ -900,7 +928,7 @@ a {
     height: 49px;
     background-image: url('../img/leaf.svg');
     margin-left: 20px;
-    margin-top: 19px;
+    margin-top: 6px;
 }
 
 .features-item.two::before {
@@ -918,14 +946,14 @@ a {
     background-image: url('../img/thermometer.svg');
     margin-left: 27px;
     margin-right: 6px;
-    margin-top: 19px;
+    margin-top: 6px;
 }
 
 .container-news-mail {
     display: flex;
-    justify-content: space-between;
     margin-top: 40px;
     margin-bottom: 40px;
+    margin-left: 27px;
     outline-offset: -5px;
 }
 
@@ -954,12 +982,11 @@ a {
 }
 
 .news-item {
-    font-weight: 700;
+    font-weight: bold;
     font-size: 24px;
     line-height: 30px;
     margin-left: 20px;
     margin-bottom: 94px;
-    margin-right: 253px;
     color: var(--basic-black);
     text-decoration: underline;
 }
@@ -969,7 +996,7 @@ a {
     flex-wrap: wrap;
     width: 560px;
     height: 220px;
-    margin-left: 32px;
+    margin-left: 26px;
     align-items: center;
     text-align: left;
     font-weight: normal;
@@ -985,10 +1012,11 @@ a {
 }
 
 .mailing p {
-    margin-left: 20px;
+    align-items: center;
+    margin-left: 26px;
     margin-top: 29px;
     margin-right: 16px;
-    margin-bottom: 47px;
+    margin-bottom: 35px;
     font-weight: normal;
     font-size: 16px;
     line-height: 22px;
@@ -997,7 +1025,7 @@ a {
 .mailing input {
     width: 368px;
     height: 44px;
-    margin-left: 20px;
+    margin-left: 26px;
     margin-bottom: 35px;
     background: var(--basic-white);
     border: 1px solid rgba(178, 178, 178, 0.52);
@@ -1029,7 +1057,7 @@ a {
 
 .contacts {
     display: flex;
-    margin-bottom: 18px;
+    margin-bottom: 0;
     font-size: 14px;
     line-height: 20px;
     color: var(--basic-black);
@@ -1052,7 +1080,8 @@ a {
 
 
 .adress-three {
-    margin-top: 30px;
+    margin-top: 20px;
+    margin-bottom: 0;
 }
 
 .adress-too, .contacts-phone {
@@ -1063,6 +1092,16 @@ a {
     line-height: 24px;
     margin-left: 25px;
     color: var(--basic-black);
+}
+
+.adress-too {
+    margin-bottom: 0;
+}
+
+.contacts-phone {
+    margin-left: 0;
+    margin-top: 11px;
+    margin-bottom: 8px;
 }
 
 .form-contacts {
@@ -1099,7 +1138,6 @@ a {
     box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
     border: none;
     cursor: pointer;
-    margin-bottom: 36px;
 }
 
 .page-footer { 
@@ -1160,6 +1198,8 @@ a {
 
 .footer-social {
     display: flex;
+    margin-left: 29px;
+    margin-top: -10px;
 }
 
 .footer-info {
@@ -1170,6 +1210,8 @@ a {
     font-weight: normal;
     font-size: 13px;
     line-height: 18px;
+    margin-top: -6px;
+    margin-left: 0;
 }
 
 .footer-logo {
@@ -1177,6 +1219,7 @@ a {
     flex-wrap: wrap;
     align-items: center;
     width: 190px;
+    margin-right: 27px;
 }
 
 .footer-copyright {
@@ -1184,7 +1227,7 @@ a {
     font-size: 12px;
     line-height: 18px;
     margin-bottom: 26px;
-    margin-top: 8px;
+    margin-top: 0;
 }
 
 /*popup
