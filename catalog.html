@@ -9,29 +9,108 @@
 </head>
 
 <body class="page-body">
-  <header>
-    <div class="container">
-    <nav class="main-navigation">
-      <a class="main-header-logo" href="index.html"><img src="img/logo.svg" width="154" height="64" alt="Логотип"></a>
-      <ul class="site-navigation list-styles-reset">
-        <li><a href="#">Каталог</a>
-        <li><a href="#">Доставка и оплата</a></li>
-        <li><a href="#">О компании</a></li>
-     </ul>
-     <ul class="user-navigation list-styles-reset">
-         <li><a href="#">Вход</a></li>
-         <li><a href="#">2 товара</a></li>
-         <li><br>с 10 до 20, ежедневно<br>
-           <a href="tel:88124502525">8 812 450-25-25</a>
-         </li>
-     </ul>
-      <ul class="site-navigation-mini list-styles-reset">
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="#">Каталог</a></li>
-        <li><a href="#">Сливочное</a></li>
+  <header class="page-header container">
+    <nav class="page-header-nav">
+      <a class="page-header-logo" href="index.html" title="На главную страницу">
+        <img src="img/svg/logo.svg" width="154" height="64" alt="Логотип Глейси">
+      </a>
+      <ul class="site-nav list-styles-reset">
+        <li id="catalog" class="site-nav-item site-nav-current">
+          <a>Каталог</a>
+          <ul class="site-nav-submenu list-styles-reset">
+            <li class="site-nav-submenu-item site-nav-submenu-lead"><a href="#">Новинки</a></li>
+            <li class="site-nav-submenu-item site-nav-submenu-current"><a>Сливочное</a></li>
+            <li class="site-nav-submenu-item"><a href="#">Щербеты</a></li>
+            <li class="site-nav-submenu-item"><a href="#">Фруктовый лед</a></li>
+            <li class="site-nav-submenu-item"><a href="#">Мелорин</a></li>
+          </ul>
+        </li>
+        <li class="site-nav-item"><a id="pay-link" href="#">Доставка и оплата</a></li>
+        <li class="site-nav-item"><a href="#">О Компании</a></li>
+      </ul>
+      <ul class="user-nav list-styles-reset">
+        <li id="search" class="user-nav-search">
+          <a class="user-nav-btn" href="#search"><span class="visually-hidden">Поиск</span></a>
+          <form class="user-nav-appear" action="https://yandex.ru/search" method="post" target="_blank">
+            <p class="form-group">
+              <input id="search-field" class="field" type="text" name="text" required="">
+              <label for="search-field">Что ищем?</label>
+            </p>
+            <button class="visually-hidden btn" type="submit">Найти</button>
+          </form>
+        </li>
+        <li id="login" class="user-nav-login">
+          <a class="user-nav-btn" href="#">Вход</a>
+          <form class="user-nav-appear" action="https://echo.htmlacademy.ru" method="post" target="_blank">
+            <p class="form-group">
+              <input id="login-mail" class="field" type="text" name="login-mail" required="">
+              <label for="login-mail">Электронная почта</label>
+            </p>
+            <p class="form-group">
+              <input id="login-pass" class="field" type="password" name="login-pass" autocomplete="off" required="">
+              <label for="login-pass">Пароль</label>
+            </p>
+            <div class="login-control">
+              <button class="btn" type="submit">Войти</button>
+              <p class="login-services">
+                <a href="#">Забыли пароль?</a>
+                <a href="#">Новая регистрация</a>
+              </p>
+            </div>
+          </form>
+        </li>
+        <li id="basket" class="user-nav-basket">
+          <a class="user-nav-btn basket-full" href="#">2 товара</a>
+          <div class="basket user-nav-appear">
+            <table class="basket-table">
+              <thead class="visually-hidden">
+                <tr>
+                  <th>Удалить</th>
+                  <th>Изображение</th>
+                  <th>Название</th>
+                  <th>Mасса × цена</th>
+                  <th>Стоимость</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="basket-delete">
+                    <button><span class="visually-hidden">Удалить</span></button>
+                  </td>
+                  <td class="basket-pic">
+                    <img src="img/offers/1-pic.png" width="33" height="33" alt="Пломбир с апельсиновым джемом">
+                  </td>
+                  <td class="basket-name">Пломбир с апельсиновым джемом</td>
+                  <td class="basket-price">1,5 кг × <span>200 руб.</span></td>
+                  <td class="basket-value">300 руб.</td>
+                </tr>
+                <tr>
+                  <td class="basket-delete">
+                    <button><span class="visually-hidden">Удалить</span></button>
+                  </td>
+                  <td class="basket-pic">
+                    <img src="img/offers/3-pic.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
+                  </td>
+                  <td class="basket-name">Клубничный пломбир с присыпкой из белого шоколада</td>
+                  <td class="basket-price">1,5 кг × <span>300 руб.</span></td>
+                  <td class="basket-value">450 руб.</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td class="basket-cost" colspan="5">Итого: 750 руб.</td>
+                </tr>
+              </tfoot>
+            </table>
+            <a class="btn" href="#">Оформить заказ</a>
+          </div>
+        </li>
       </ul>
     </nav>
-  </div>
+    <div class="page-header-info">
+      <p class="work-mode">С 10 до 20, ежедневно</p>
+      <a class="tel" href="tel:+78124502525">8 812 450-25-25</a>
+    </div>
   </header>
 
   <main class="container">
@@ -200,7 +279,7 @@
             <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M18 35C27.3888 35 35 27.3888 35 18C35 8.61116 27.3888 1 18 1C8.61116 1 1 8.61116 1 18C1 27.3888 8.61116 35 18 35Z" stroke="white" stroke-opacity="0.5" stroke-width="2"/>
               <path d="M18 2C14.8355 2 11.7421 2.93838 9.11088 4.69649C6.4797 6.45459 4.42894 8.95345 3.21793 11.8771C2.00693 14.8007 1.69008 18.0177 2.30744 21.1214C2.92481 24.2251 4.44866 27.0761 6.6863 29.3137C8.92394 31.5513 11.7749 33.0752 14.8786 33.6926C17.9823 34.3099 21.1993 33.9931 24.1229 32.7821C27.0466 31.5711 29.5454 29.5203 31.3035 26.8891C33.0616 24.2579 34 21.1645 34 18C34 13.7565 32.3143 9.68687 29.3137 6.68629C26.3131 3.68571 22.2435 2 18 2ZM22.06 11.45H19V14.9H22V18.34H19V27H16V18.34H13V14.9H16V11.45C15.9449 10.5957 16.2291 9.75426 16.7908 9.1083C17.3525 8.46234 18.1464 8.06407 19 8H22V11.45H22.06Z" fill="white" fill-opacity="0.8"/>
-          </svg> 
+          </svg>
           </a>
         </li>
         <li>
@@ -248,7 +327,7 @@
         <li><a class="info-link right-too" href="#">Экологические стандарты</a></li>
       </ul>
     </section>
-    <div class="footer-logo"><img src="img/logoacademy.svg" width="108" height="39" alt="Логотиа академии">
+    <div class="footer-logo"><img src="img/svg/logoacademy.svg" width="108" height="39" alt="Логотиа академии">
       <p class="footer-copyright"><a class="footer-copyright" href="https://htmlacademy.ru/intensive/htmlcss">Сделано в HTML Academy ©2019</a></p>
     </div>
   </footer>

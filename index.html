@@ -9,33 +9,65 @@
 </head>
 
 <body class="page-body">
-  <header class="main-header">
-    <div class="container">
-      <nav class="main-navigation">
-        <a class="main-header-logo"><img src="img/logo.svg" width="154" height="64" alt="Логотип"></a>
-        <div class="main-header-bar">
-          <div class="main-navigation-wrapper">
-            <ul class="site-navigation list-styles-reset">
-              <li><a href="catalog.html">Каталог</a>
-              <li><a href="#">Доставка и оплата</a></li>
-              <li><a href="#">О компании</a></li>
-            </ul>
-            <div class="user-navigation">
-              <ul class="list-styles-reset user-navigation">
-                <li><a class="login-link search" href="#"></li>
-                <li><a class="login-link exit" href="#">Вход</a></li>
-                <li class="user-basket"><a class="login-link basket" href="#"> Пусто</a></li>
-              </ul>
-              <br>
-              <p class="work-time">с 10 до 20, ежедневно<br>
-                <a class="header-contacts-phone-main" href="tel:88124502525">8 812 450-25-25</a>
+  <header class="page-header container">
+    <nav class="page-header-nav">
+      <a class="page-header-logo" title="На главную страницу">
+        <img src="img/svg/logo.svg" width="154" height="64" alt="Логотип Глейси">
+      </a>
+      <ul class="site-nav list-styles-reset">
+        <li id="catalog" class="site-nav-item">
+          <a href="#">Каталог</a>
+          <ul class="site-nav-submenu list-styles-reset">
+            <li class="site-nav-submenu-item site-nav-submenu-lead"><a href="#">Новинки</a></li>
+            <li class="site-nav-submenu-item"><a href="catalog.html">Сливочное</a></li>
+            <li class="site-nav-submenu-item"><a href="#">Щербеты</a></li>
+            <li class="site-nav-submenu-item"><a href="#">Фруктовый лед</a></li>
+            <li class="site-nav-submenu-item"><a href="#">Мелорин</a></li>
+          </ul>
+        </li>
+        <li class="site-nav-item"><a id="pay-link" href="#">Доставка и оплата</a></li>
+        <li class="site-nav-item"><a href="#">О Компании</a></li>
+      </ul>
+      <ul class="user-nav list-styles-reset">
+        <li id="search" class="user-nav-search">
+          <a class="user-nav-btn search" href="#"><span class="visually-hidden">Поиск</span></a>
+          <form class="user-nav-appear" action="http://echo.htmlacademy.ru" method="get" target="_blank">
+            <p class="form-group">
+              <input id="search-field" class="field" type="text" name="text" required>
+              <label for="search-field">Что ищем?</label>
+            </p>
+            <button class="visually-hidden btn" type="submit">Найти</button>
+          </form>
+        </li>
+        <li id="login" class="user-nav-login">
+          <a class="user-nav-btn" href="#">Вход</a>
+          <form class="user-nav-appear" action="https://echo.htmlacademy.ru" method="post" target="_blank">
+            <p class="form-group">
+              <input id="login-mail" class="field" type="text" name="login-mail" required>
+              <label for="login-mail">Электронная почта</label>
+            </p>
+            <p class="form-group">
+              <input id="login-pass" class="field" type="password" name="login-pass" autocomplete="off" required>
+              <label for="login-pass">Пароль</label>
+            </p>
+            <div class="login-control">
+              <button class="btn" type="submit">Войти</button>
+              <p class="login-services">
+                <a href="#">Забыли пароль?</a>
+                <a href="#">Новая регистрация</a>
               </p>
             </div>
-          </div>
-        </div>
-      </nav>
+          </form>
+        </li>
+        <li id="basket" class="user-nav-basket">
+          <a class="user-nav-btn no-href">Пусто</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="page-header-info">
+      <p class="work-mode">С 10 до 20, ежедневно</p>
+      <a class="tel" href="tel:+78124502525">8 812 450-25-25</a>
     </div>
-
   </header>
 
   <main class="container">
@@ -174,7 +206,7 @@
             <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M18 35C27.3888 35 35 27.3888 35 18C35 8.61116 27.3888 1 18 1C8.61116 1 1 8.61116 1 18C1 27.3888 8.61116 35 18 35Z" stroke="white" stroke-opacity="0.5" stroke-width="2"/>
               <path d="M18 2C14.8355 2 11.7421 2.93838 9.11088 4.69649C6.4797 6.45459 4.42894 8.95345 3.21793 11.8771C2.00693 14.8007 1.69008 18.0177 2.30744 21.1214C2.92481 24.2251 4.44866 27.0761 6.6863 29.3137C8.92394 31.5513 11.7749 33.0752 14.8786 33.6926C17.9823 34.3099 21.1993 33.9931 24.1229 32.7821C27.0466 31.5711 29.5454 29.5203 31.3035 26.8891C33.0616 24.2579 34 21.1645 34 18C34 13.7565 32.3143 9.68687 29.3137 6.68629C26.3131 3.68571 22.2435 2 18 2ZM22.06 11.45H19V14.9H22V18.34H19V27H16V18.34H13V14.9H16V11.45C15.9449 10.5957 16.2291 9.75426 16.7908 9.1083C17.3525 8.46234 18.1464 8.06407 19 8H22V11.45H22.06Z" fill="white" fill-opacity="0.8"/>
-          </svg> 
+          </svg>
           </a>
         </li>
         <li>
@@ -222,60 +254,60 @@
         <li><a class="info-link right-too" href="#">Экологические стандарты</a></li>
       </ul>
     </section>
-    <div class="footer-logo"><img src="img/logoacademy.svg" width="108" height="39" alt="Логотиа академии">
+    <div class="footer-logo"><img src="img/svg/logoacademy.svg" width="108" height="39" alt="Логотиа академии">
       <p class="footer-copyright"><a class="footer-copyright" href="https://htmlacademy.ru/intensive/htmlcss">Сделано в HTML Academy ©2019</a></p>
     </div>
   </footer>
 
   <div  id="popup" class="popup">
     <div class="popup-phone">
-        <div class="popup-content">
-            <h1 class="title-popup">Мы вам обязательно ответим!</h1>
-            <input class="name" type="name" required placeholder="Имя Фамилия">
-            <input class="email" type="email" required placeholder="email@example.com">
-            <input class="text" type="text" required placeholder="В свободной форме">
-            <button class="button-popup">Отправить</button>
-             <a href="#" class="popup-close"><svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M18 1.4175L16.4885 0L8.99468 7.07747L1.50089 0L0 1.4175L7.49379 8.49497L0 15.5724L1.50089 17L8.99468 9.92253L16.4885 17L18 15.5724L10.5062 8.49497L18 1.4175Z" fill="#231F20"/>
-                </svg></a>
+      <div class="popup-content">
+        <h2 class="title-popup">Мы вам обязательно ответим!</h2>
+        <input class="name" type="name" required placeholder="Имя Фамилия">
+        <input class="email" type="email" required placeholder="email@example.com">
+        <input class="text" type="text" required placeholder="В свободной форме">
+        <button class="button-popup">Отправить</button>
+          <a href="#" class="popup-close"><svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18 1.4175L16.4885 0L8.99468 7.07747L1.50089 0L0 1.4175L7.49379 8.49497L0 15.5724L1.50089 17L8.99468 9.92253L16.4885 17L18 15.5724L10.5062 8.49497L18 1.4175Z" fill="#231F20"/>
+            </svg>
+          </a>
+      </div>
+    </div>
+  </div>
 
+  <div  id="popup" class="popup">
+    <div class="popup-exit">
+        <div class="popup-content-exit">
+            <input class="email-exit" type="email" required placeholder="email@example.com">
+            <input class="password-exit" type="password" required placeholder="......">
+            <button class="button-popup-exit">Войти</button>
+            <a href="#" class="password-save">Забыли пароль?</a>
+            <a href="#" class="new-user">Новая регистрация</a>
         </div>
     </div>
-</div>
-
-<div  id="popup" class="popup">
-  <div class="popup-exit">
-      <div class="popup-content-exit">
-          <input class="email-exit" type="email" required placeholder="email@example.com">
-          <input class="password-exit" type="password" required placeholder="......">
-          <button class="button-popup-exit">Войти</button>
-          <a href="#" class="password-save">Забыли пароль?</a>
-          <a href="#" class="new-user">Новая регистрация</a>
-      </div>
   </div>
-</div>
 
-<div  id="popup" class="popup">
+<!-- <div  id="popup" class="popup">
   <div class="popup-basket">
       <div class="popup-content-basket">
           <ul class="popup-basket-list">
-         <li class="popup-li-one"><span><svg class="hit-one-basket" width="11" height="11" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M18 1.4175L16.4885 0L8.99468 7.07747L1.50089 0L0 1.4175L7.49379 8.49497L0 15.5724L1.50089 17L8.99468 9.92253L16.4885 17L18 15.5724L10.5062 8.49497L18 1.4175Z" fill="#231F20"/>
-              </svg><img class="icecream-mini-basket" src="../1487723-gllacy-29/img/hit1.png" width="33" height="33" alt="Вкусное мороженое в вашей корзине"><span class="icecream-name">Пломбир с апельсиновым джемом</span>
-              <span class="icecream-cash-basket">1,5кг Х 200 руб.</span><span class="icecream-buy">300 руб.</span>
+          <li class="popup-li-one"><span><svg class="hit-one-basket" width="11" height="11" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18 1.4175L16.4885 0L8.99468 7.07747L1.50089 0L0 1.4175L7.49379 8.49497L0 15.5724L1.50089 17L8.99468 9.92253L16.4885 17L18 15.5724L10.5062 8.49497L18 1.4175Z" fill="#231F20"/>
+            </svg><img class="icecream-mini-basket" src="../1487723-gllacy-29/img/hit1.png" width="33" height="33" alt="Вкусное мороженое в вашей корзине"><span class="icecream-name">Пломбир с апельсиновым джемом</span>
+            <span class="icecream-cash-basket">1,5кг Х 200 руб.</span><span class="icecream-buy">300 руб.</span>
           </span></li>
           <li class="popup-li-too">
           <span><svg class="hit-three-basket" width="11" height="11" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M18 1.4175L16.4885 0L8.99468 7.07747L1.50089 0L0 1.4175L7.49379 8.49497L0 15.5724L1.50089 17L8.99468 9.92253L16.4885 17L18 15.5724L10.5062 8.49497L18 1.4175Z" fill="#231F20"/>
-              </svg></span><img class="icecream-toomini-basket" src="../1487723-gllacy-29/img/hit3.png" width="33" height="33" alt="Вкусное мороженое в вашей корзине"><span class="icecream-name-too">Клубничный пломбир с присыпкой из белого шоколада</span>
-              <span class="icecream-cash-basket">1,5кг Х 300 руб.</span><span class="icecream-buy">450 руб.</span><span class="line"></span>
-              <span class="end-cash">Итог: 750 руб.</span>
+            <path d="M18 1.4175L16.4885 0L8.99468 7.07747L1.50089 0L0 1.4175L7.49379 8.49497L0 15.5724L1.50089 17L8.99468 9.92253L16.4885 17L18 15.5724L10.5062 8.49497L18 1.4175Z" fill="#231F20"/>
+            </svg></span><img class="icecream-toomini-basket" src="../1487723-gllacy-29/img/hit3.png" width="33" height="33" alt="Вкусное мороженое в вашей корзине"><span class="icecream-name-too">Клубничный пломбир с присыпкой из белого шоколада</span>
+            <span class="icecream-cash-basket">1,5кг Х 300 руб.</span><span class="icecream-buy">450 руб.</span><span class="line"></span>
+            <span class="end-cash">Итог: 750 руб.</span>
           </li>
           <button class="button-popup-basket">Оформить заказ</button>
       </ul>
       </div>
   </div>
-</div>
+</div> -->
 
 </body>
 
