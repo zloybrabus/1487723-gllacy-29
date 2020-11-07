@@ -1879,7 +1879,7 @@ input[type="checkbox"].visually-hidden {
 .lbl {
   position: relative;
   margin-right: 15px;
-  padding: 1px 0 2px 30px;
+  padding: 1px 0 2px 32px;
 
   background-repeat: no-repeat;
   opacity: 0.8;
@@ -1949,7 +1949,6 @@ input[type="checkbox"].visually-hidden {
   -webkit-box-shadow: inset 0 2px 1px 0 #696969;
   box-shadow: inset 0 2px 1px 0 #696969;
 }
-
 
 
 
@@ -2053,12 +2052,12 @@ input[type="checkbox"].visually-hidden {
 
 .social-tw {
   background-image: url("../img/icons/social-tw.svg");
-  margin-left: 5px;
+  margin-left: 8px;
 }
 
 .social-inst {
   background-image: url("../img/icons/social-inst.svg");
-  margin-left: 5px;
+  margin-left: 8px;
 }
 
 .social-fb {
@@ -2067,7 +2066,7 @@ input[type="checkbox"].visually-hidden {
 
 .social-vk {
   background-image: url("../img/icons/social-vk.svg");
-  margin-left: 5px;
+  margin-left: 6px;
 }
 
 .social-tw:hover,
@@ -2156,7 +2155,7 @@ input[type="checkbox"].visually-hidden {
 }
 
 .copyright p {
-  margin: 3px 0 0 0px;
+  margin: 5px 0 0 0px;
   white-space: nowrap;
 }
 
