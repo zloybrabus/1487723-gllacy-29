@@ -256,6 +256,7 @@ input[type="checkbox"].visually-hidden {
 
 .btn {
   display: inline-block;
+  vertical-align: middle;
   padding: 9px 25px 11px;
 
   font-weight: 700;
@@ -429,6 +430,7 @@ input[type="checkbox"].visually-hidden {
 
 .site-nav-item > a {
   display: inline-block;
+  vertical-align: inherit;
   margin: 9px 14px 0;
   padding-bottom: 3px;
 
@@ -603,6 +605,7 @@ input[type="checkbox"].visually-hidden {
 
 .user-nav-btn {
   display: inline-block;
+  vertical-align: inherit;
   padding: 8px 16px;
 
   font-weight: 500;
@@ -658,6 +661,7 @@ input[type="checkbox"].visually-hidden {
   content: url("../img/icons/search.svg");
 
   display: inline-block;
+  vertical-align: inherit;
   width: 17px;
   height: 17px;
 }
@@ -918,6 +922,7 @@ input[type="checkbox"].visually-hidden {
   position: relative;
 
   display: inline-block;
+  vertical-align: inherit;
   width: 21px;
   height: 21px;
   margin-right: 8px;
@@ -1592,6 +1597,7 @@ input[type="checkbox"].visually-hidden {
   content: url("../img/icons/close.svg");
 
   display: inline-block;
+  vertical-align: inherit;
   width: 11px;
   height: 11px;
 
@@ -1659,6 +1665,7 @@ input[type="checkbox"].visually-hidden {
   content: "»";
 
   display: inline-block;
+  vertical-align: inherit;
   padding: 0 6px 0 8px;
 }
 
@@ -1797,6 +1804,7 @@ input[type="checkbox"].visually-hidden {
 
 .filters-price-data input {
   display: inline-block;
+  vertical-align: inherit;
   width: 28px;
   height: 16px;
   padding: 0;
@@ -2264,6 +2272,7 @@ input[type="checkbox"].visually-hidden {
   content: url("../img/icons/close.svg");
 
   display: inline-block;
+  vertical-align: inherit;
   width: 35px;
   height: 35px;
   padding: 9px;
